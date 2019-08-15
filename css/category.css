@@ -1,0 +1,19 @@
+.website {
+  width: 900px;
+}
+
+/* Grid system */
+.img {grid-area: ig;}
+.title {  grid-area: tt;}
+.content {grid-area: ct;}
+.block {
+  display: grid;
+  margin-bottom: 20px;
+  padding: 15px;
+  grid-template-columns: 315px 3fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "ig tt"
+    "ig ct"
+}

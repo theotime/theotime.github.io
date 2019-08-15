@@ -1,0 +1,21 @@
+/* Grid system */
+.title {  grid-area: tt;}
+.img1 {grid-area: ig1;}
+.img2 {grid-area: ig2;}
+.img3 {grid-area: ig3;}
+.img4 {grid-area: ig4;}
+.img5 {grid-area: ig5;}
+.img6 {grid-area: ig6;}
+.block {
+  display: grid;
+  margin-bottom: 20px;
+  padding: 15px;
+  padding-bottom: 25;
+  grid-template-columns: 315px 315px 315px;
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  grid-template-areas:
+    "tt tt tt"
+    "ig1 ig2 ig3"
+    "ig4 ig5 ig6"
+}
