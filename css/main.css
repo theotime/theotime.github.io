@@ -94,6 +94,9 @@ img {
   margin-bottom: 5px;
 }
 
+img,iframe {
+  border-radius: 5px;
+}
 .content ul {
   list-style-type: none;
   padding-left: 10px;
