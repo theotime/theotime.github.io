@@ -1,17 +1,17 @@
 h1 {
-  display: block;
+   display: block;
    font-size: 2em;
    font-weight: bold;
 }
 
 h2 {
-  display: block;
+   display: block;
    font-size: 1.5em;
    font-weight: bold;
 }
 
 h3 {
-  display: block;
+   display: block;
    font-size: 1.2em;
    font-weight: bold;
    margin-bottom: 10px;
@@ -25,7 +25,14 @@ body {
   font-size: 14px;
   font-family: "Gadugi";
   color: #eee;
-  background: #393333;
+  /*background: #393333;*/
+  background: repeating-linear-gradient(
+    -45deg,
+    #393333,
+    #393333 40px,
+    #91d0ed 40px,
+    #91d0ed 80px
+  );
   padding: 15px;
 }
 
@@ -35,29 +42,34 @@ a {
 }
 
 .website {
-  width: 1025px; /* 315*3+25*2+15*2 */
+  width: 900px;
   margin: 0 auto;
 }
 
 .header,
+.subheader,
+.footer,
 .block {
   box-shadow: 0px 0px 15px #000;
   border-radius: 5px;
   background: #222;
 }
 
-.header > * {
-  padding: 15px;
+.header {
+  padding: 30px 15px;
   margin-bottom: 20px;
 }
 
-
+.subheader > * {
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
 .block > * {
   margin: 0;
 }
 
-.img > img {
+img {
   box-shadow: 0px 0px 15px #000;
 }
 
@@ -70,7 +82,9 @@ a {
 }
 
 .footer > * {
-  text-align: right;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .content ul {
@@ -84,4 +98,229 @@ a {
 
 .cv-section {
   margin-bottom: 20px;
+}
+
+.animate1 {
+  transition: all .5s;
+}
+.animate1:hover {
+	transform: translateX(100px) scale(1.2);
+}
+
+.animate2 {
+  transition: all .5s;
+}
+
+.animate2:hover {
+	transform: scale(1.02);
+}
+
+.animate3 {
+  transition: all .5s;
+}
+
+.animate3:hover {
+	transform: translateX(15px) scale(1.03);
+}
+
+.animate_img {
+  transition: all .5s;
+}
+
+.animate_img:hover {
+	transform: scale(1.02) rotate(1.5deg);
+}
+
+.animate_img_alt {
+  transition: all .5s;
+}
+
+.animate_img_alt:hover {
+	transform: scale(1.02) rotate(-1.5deg);
+}
+
+
+/* https://codepen.io/FelixRilling/pen/vNJoMy */
+h1 {
+  /*Create overlap*/
+  margin: 0;
+  line-height: 0;
+  /*Animation*/
+  animation: glitch1 2.5s infinite;
+}
+
+h1:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+
+h1:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+/*Keyframes*/
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
 }

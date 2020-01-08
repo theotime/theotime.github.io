@@ -1,7 +1,3 @@
-.website {
-  width: 900px;
-}
-
 /* Grid system */
 .img {grid-area: ig;}
 .title {  grid-area: tt;}
