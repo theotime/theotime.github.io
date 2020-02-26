@@ -27,11 +27,11 @@ body {
   color: #eee;
   /*background: #393333;*/
   background: repeating-linear-gradient(
-    -45deg,
-    #222,
-    #222 0px,
-    #393333 10px,
-    #393333 80px
+    -35deg,
+    #111,
+    #111 0px,
+    #191919 5px,
+    #191919 80px
   );
   padding: 15px;
 }
@@ -52,7 +52,7 @@ a {
 .block {
   box-shadow: 0px 0px 15px #000;
   border-radius: 5px;
-  background: #222;
+  background: #191919;
 }
 
 .header {
