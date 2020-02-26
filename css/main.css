@@ -110,14 +110,14 @@ img,iframe {
 }
 
 .animate1 {
-  transition: all .5s;
+  transition: all .25s;
 }
 .animate1:hover {
-	transform: translateX(100px) scale(1.2);
+	transform: translateX(50px) scale(1.1);
 }
 
 .animate2 {
-  transition: all .5s;
+  transition: all .25s;
 }
 
 .animate2:hover {
@@ -125,7 +125,7 @@ img,iframe {
 }
 
 .animate3 {
-  transition: all .5s;
+  transition: all .25s;
 }
 
 .animate3:hover {
@@ -133,19 +133,21 @@ img,iframe {
 }
 
 .animate_img {
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .animate_img:hover {
-	transform: scale(1.02) rotate(1.5deg);
+	/*transform: scale(1.02) rotate(1.5deg);*/
+  transform: scale(1.02);
 }
 
 .animate_img_alt {
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .animate_img_alt:hover {
-	transform: scale(1.02) rotate(-1.5deg);
+	/*transform: scale(1.02) rotate(-1.5deg);*/
+  transform: scale(1.02);
 }
 
 
