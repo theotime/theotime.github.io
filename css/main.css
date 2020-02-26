@@ -141,16 +141,6 @@ img,iframe {
   transform: scale(1.02);
 }
 
-.animate_img_alt {
-  transition: all .3s;
-}
-
-.animate_img_alt:hover {
-	/*transform: scale(1.02) rotate(-1.5deg);*/
-  transform: scale(1.02);
-}
-
-
 /* https://codepen.io/FelixRilling/pen/vNJoMy */
 h1 {
   /*Create overlap*/
