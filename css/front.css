@@ -1,6 +1,6 @@
 /* Grid system */
 .title {  grid-area: tt;}
-.img1 {grid-area: ig1;}
+.banner {grid-area: bn;}
 .block {
   display: grid;
   margin-bottom: 20px;
@@ -10,5 +10,5 @@
   grid-gap: 25px;
   grid-template-areas:
     "tt"
-    "ig1"
+    "bn"
 }
