@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,48 +15,49 @@
   <div class="website">
 
     <div class="header">
-      <div>
-        <h1>$> MODULOPRIME.COM</h1>
-        <h1>$> MODULOPRIME.COM</h1>
-        <h1>$> MODULOPRIME.COM</h1>
-      </div>
-      <br><br>
-      <div>
-        <h1>$></h1>
-        <h1>$></h1>
-        <h1>$></h1>
-      </div>
-      <br><br>
-      <div>
-        <h1>$> Creative Coding | Generative Design | Live-Coding | VJing</h1>
-        <h1>$> Creative Coding | Generative Design | Live-Coding | VJing</h1>
-        <h1>$> Creative Coding | Generative Design | Live-Coding | VJing</h1>
-      </div>
+      <h1>$> MODULOPRIME.COM</h1>
+      <h1>$></h1>
+      <h1>$> 3D Graphics, Shaders &amp Live-Visual</h1>
     </div>
 
     <div class="block">
-      <h2 class="title animate1"><a href="shadertoy.html">//// SHADERS</a></h2>
+      <h2 class="title animate1"><a href="shadertoy.html">\\\ SHADERTOY</a></h2>
       <div class="img img1 animate_img">
         <a href=shadertoy.html>
-          <image src="images/banner1.png" />
+          <video playsinline autoplay muted loop>
+            <source src="videos/banner1.mp4" type="video/mp4">
+            <source src="videos/banner1.webm" type="video/webm">
+                Not supported.
+          </video>
         </a>
       </div>
     </div>
 
     <div class="block">
-      <h2 class="title animate1"><a href="blender.html">//// BLENDER</a></h2>
+      <h2 class="title animate1"><a href="blender.html">\\\ BLENDER</a></h2>
+      
       <div class="img img1 animate_img">
         <a href="blender.html">
-          <image src="images/banner2.png" />
+          <video playsinline autoplay muted loop>
+            <source src="videos/banner2.mp4" type="video/mp4">
+            <source src="videos/banner2.webm" type="video/webm">
+                Not supported.
+          </video>
         </a>
       </div>
     </div>
 
     <div class="block">
-      <h2 class="title animate1"><a href="livecoding.html">//// LIVE-CODING / VJING</a></h2>
+      <h2 class="title animate1"><a href="live.html">\\\ LIVE-VISUAL</a></h2>
+      
+      
       <div class="img img1 animate_img">
         <a href="live.html">
-          <image src="images/banner3.png" />
+          <video playsinline autoplay muted loop>
+            <source src="videos/banner3.mp4" type="video/mp4">
+            <source src="videos/banner3.webm" type="video/webm">
+                Not supported.
+          </video>
         </a>
       </div>
     </div>
@@ -67,3 +69,9 @@
 </body>
 
 </html>
+
+<script>
+window.addEventListener("load", () => {
+  document.querySelector("body").classList.add("loaded"); 
+ });
+</script>
