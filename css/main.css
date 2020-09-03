@@ -2,7 +2,6 @@ body {
   font-size: 14px;
   font-family: "Gadugi";
   color: #eee;
-  /*background: #393333;*/
   background: repeating-linear-gradient(
     -35deg,
     #111,
@@ -166,7 +165,7 @@ img, iframe, video {
 
 @media only screen and (max-width: 768px) {
   .website {
-    width: 90%;
+    width: 95%;
   }
 
   .img > iframe {
@@ -175,19 +174,20 @@ img, iframe, video {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  
   h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .info-title {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
-  .img > iframe {
-    height: 2px;
-  }
 }

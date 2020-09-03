@@ -12,3 +12,10 @@
     "tt"
     "bn"
 }
+
+@media only screen and (max-width: 600px) {
+  .block {
+    grid-gap: 15px;
+  }
+}
+
